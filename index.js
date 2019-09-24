@@ -9,6 +9,18 @@ const session = require('express-session');
 const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
 const MongoStore = require('connect-mongo')(session);
+
+//
+const sassMiddleware = require('node-sass-middleware');
+
+app.use(sassMiddleware({
+    src: './assets/scss', // from where to pick up scss file to convert it into css
+    dest: './assets/css',
+    debug: true, //do i want to display some error when it cannot convert to css
+    outputStyle: 'extended',
+    prefix: '/css'  // 
+}));
+
 //Reconize request object as string or array (Its Middleware)
 app.use(express.urlencoded());
 

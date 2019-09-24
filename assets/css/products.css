@@ -1,15 +1,13 @@
-.horizontal-scroll-wrapper{
-    width: 100%;
-    height: 300px;
-    background: black;
-    position: inherit;
-    display: flex;
-    flex-direction: row;
-    overflow: scroll;
-}
-.horizontal-scroll-wrapper > div {
+.horizontal-scroll-wrapper {
+  width: 100%;
+  height: 300px;
+  background: black;
+  position: inherit;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll; }
+  .horizontal-scroll-wrapper div {
     width: 250px;
-    height: 100px;;
+    height: 100px;
     background: red;
-    margin: 3px;
-  }
+    margin: 3px; }
