@@ -1,25 +1,14 @@
-
-footer {
-	background-color: #222;
-	color: #fff;
-	font-size: 14px;
-	bottom: 0;
-	position: fixed;
-	left: 0;
-	right: 0;
-	text-align: center;
-    z-index: 999;
-    p {
-        margin: 10px 0;
-    }
-    i {
-        color: red;
-    }
-    a {
-        color: #3c97bf;
-        text-decoration: none;
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: #1f1b1b;
+    text-align: center;
+    span{
+        color: whitesmoke;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 45px;  
     }
 }
-
-
-

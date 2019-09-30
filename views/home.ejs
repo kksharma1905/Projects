@@ -1,13 +1,10 @@
-<h1>Home Page</h1>
-<link rel="stylesheet" href="/css/products.css">
 
-<div class="horizontal-scroll-wrapper">
-    <div class="product-card">item 1</div>
-    <div class="product-card">item 2</div>
-    <div class="product-card">item 3</div>
-    <div class="product-card">item 4</div>
-    <div class="product-card">item 5</div>
-    <div class="product-card">item 6</div>
-    <div class="product-card">item 7</div>
-    <div class="product-card">item 8</div>
-</div>
+<link rel="stylesheet" href="/css/products.css">
+        <%- include('products'); %>
+        <section id="feed-posts"> 
+                <h4>Posts</h4> 
+                <form action="" id="new-post-form" method="POST"> 
+                        <textarea name="content" id="" cols="30" rows="3"></textarea> 
+                        <input type="submit" value="Post"> 
+                </form>          
+        </section>
